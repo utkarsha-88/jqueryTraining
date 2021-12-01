@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of jQuery Animation Effects</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <style type="text/css">
+
+        img{
+    
+            position: relative; /* Required to move element */
+    
+        }
+    
+    </style>
+    
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+    
+        $("button").click(function(){
+    
+            $("img").animate({
+    
+                left: 1000,height:'300px',width:'300px'
+    
+            },10000);
+    
+        });
+    
+    });
+    
+    </script>
+</head>
+<body>
+   <h1>Example of jquery Animation</h1>
+   <button type="button">Start Animation</button> 
+   <p>
+       <img src="images/mush.jpg" alt="">
+   </p>
+</body>
+</html>
